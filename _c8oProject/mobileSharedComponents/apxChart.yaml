@@ -1,3 +1,34 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_CompImport*/
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		this.ref.detectChanges()
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	/*End_c8o_CompFunction*/
+        
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1698397475706]: 
   ↓InstallDependencies [ngx.components.UICustomAsyncAction-1698397483147]: 
     build_scripts: 
@@ -166,12 +197,21 @@
 ↓chart [ngx.components.UICompVariable-1698398091344]: 
   value: null
 ↓annotations [ngx.components.UICompVariable-1698398634198]: 
+  comment: |
+    Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
   value: null
 ↓colors [ngx.components.UICompVariable-1698398636759]: 
   value: null
 ↓dataLabels [ngx.components.UICompVariable-1698398637860]: 
+  comment: |
+    Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
   value: null
 ↓series [ngx.components.UICompVariable-1698398088116]: 
+  comment: |
+    The series is a set of data. You may have single or multiple data series.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
   value: null
 ↓stroke [ngx.components.UICompVariable-1698398639617]: 
   value: null
@@ -186,6 +226,9 @@
 ↓plotOptions [ngx.components.UICompVariable-1698398644237]: 
   value: null
 ↓responsive [ngx.components.UICompVariable-1698398645175]: 
+  comment: |
+    You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
   value: null
 ↓xaxis [ngx.components.UICompVariable-1698398646047]: 
   value: null

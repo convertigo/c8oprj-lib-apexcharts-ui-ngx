@@ -1,5 +1,5 @@
 ↑isRoot: true
-comment: My First Page as root page
+comment: A simple example to show apex chart usage
 preloadPriority: high
 scriptContent: 
   - xmlizable: 

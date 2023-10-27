@@ -31,7 +31,7 @@ Describes the mobile application global properties
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/pagecomponent_color_16x16.png?raw=true "PageComponent") Page
 
-My First Page as root page
+A simple example to show apex chart usage
 </p></blockquote></details>
 
 <details><summary><span style="color:DarkGoldenRod"><i>Shared Components</i></span></summary><blockquote><p>
@@ -57,7 +57,8 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;annotations
 </td>
 <td>
-
+Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
+For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
 </td>
 </tr>
 <tr>
@@ -81,7 +82,8 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;dataLabels
 </td>
 <td>
-
+Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
+For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
 </td>
 </tr>
 <tr>
@@ -129,7 +131,8 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;responsive
 </td>
 <td>
-
+You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
+For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
 </td>
 </tr>
 <tr>
@@ -137,7 +140,8 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;series
 </td>
 <td>
-
+The series is a set of data. You may have single or multiple data series.
+For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
 </td>
 </tr>
 <tr>
