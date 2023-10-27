@@ -60,6 +60,46 @@ title: First page
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓Div [ngx.components.UIDynamicElement-1698398261070]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓tag [ngx.components.UIUseShared-1698398140993]: 
+      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+      ↓series [ngx.components.UIUseVariable-1698398148870]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.series
+      ↓chart [ngx.components.UIUseVariable-1698398148872]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.chart
+      ↓title [ngx.components.UIUseVariable-1698398148874]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.title
+      ↓xaxis [ngx.components.UIUseVariable-1698399317893]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.xaxis
+      ↓theme [ngx.components.UIUseVariable-1698399317903]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.theme
+    ↓Style [ngx.components.UIStyle-1698398274666]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'text-align:center;
+              width: 100%;
+              height: 300px;
+              '
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
@@ -89,3 +129,13 @@ title: First page
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1698398178927]: 
+  viewEvent: onWillLoad
+  ↓SetLocal [ngx.components.UIDynamicAction-1698398189745]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:chartOptions",
+       "Value": "script:{\r\n  series: [\r\n    {\r\n      name: \"My-series\",\r\n      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]\r\n    }\r\n  ],\r\n    chart: {\r\n    height: 350,\r\n      type: \"bar\"\r\n  },\r\n  title: {\r\n    text: \"My First Convertigo Apex Chart\"\r\n  },\r\n  xaxis: {\r\n    categories: [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\"]\r\n  },\r\n  theme: {\r\n    mode: ''dark''\r\n  }\r\n}"
+      }'
+    tagName: SetLocal
