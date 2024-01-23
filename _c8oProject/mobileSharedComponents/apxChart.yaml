@@ -70,7 +70,7 @@ scriptContent:
               - java.lang.String: 
                 - ↑value: apexcharts
               - java.lang.String: 
-                - ↑value: 3.44.0
+                - ↑value: 3.45.2
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
             - com.twinsoft.convertigo.beans.common.XMLVector: 
