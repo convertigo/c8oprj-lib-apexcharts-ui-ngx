@@ -29,13 +29,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     libApexCharts=git@github.com:convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=main
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=main
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     libApexCharts=git@github.com:convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/main.zip
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/main.zip
      ```
      </td></tr>
     </table>
