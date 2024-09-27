@@ -22,7 +22,7 @@ title: First page
   comment: Page header
   tagName: ion-header
   ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
-    beanData: '{"ionBean":"ToolBar"}'
+    beanData: '{"ionBean":"ToolBar","IonColor":"plain:secondary"}'
     tagName: ion-toolbar
     ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
@@ -34,7 +34,7 @@ title: First page
         beanData: '{"ionBean":"MenuButton"}'
         tagName: ion-menu-button
     ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
-      beanData: '{"ionBean":"BarTitle"}'
+      beanData: '{"ionBean":"BarTitle","IonColor":"plain:danger"}'
       tagName: ion-title
       ↓Text [ngx.components.UIText-1491634275121]: 
         textValue: 
@@ -96,10 +96,51 @@ title: First page
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              'text-align:center;
+              '/*# mystyule*/
+              text-align:center;
               width: 100%;
               height: 300px;
+              margin-top:200px;
               '
+    ↓Button [ngx.components.UIDynamicElement-1706113697598]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: ion-button
+      ↓Label [ngx.components.UIDynamicElement-1706113697593]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1706113697595]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:some button text
+      ↓attr [ngx.components.UIControlEvent-1706113697597]: 
+        ↓ModalPage [ngx.components.UIDynamicAction-1706113713834]: 
+          beanData: |
+            '{
+             "ionBean": "ModalAction",
+             "page": "plain:libApexCharts.Application.NgxApp.Page2",
+             "cssClass": "plain:"
+            }'
+          tagName: ModalPage
+    ↓styleEditor [ngx.components.UIStyle-1706114054030]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              text-align:center;
+              width:100%;
+              height:300px;
+              margin-top:200px;
+              
+  ↓Paragraph [ngx.components.UIDynamicElement-1706200464236]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓some_text [ngx.components.UIText-1706200464238]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Some text
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

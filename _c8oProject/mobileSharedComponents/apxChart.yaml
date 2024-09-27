@@ -70,14 +70,14 @@ scriptContent:
               - java.lang.String: 
                 - ↑value: apexcharts
               - java.lang.String: 
-                - ↑value: 3.44.0
+                - ↑value: 3.51.0
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
             - com.twinsoft.convertigo.beans.common.XMLVector: 
               - java.lang.String: 
                 - ↑value: ng-apexcharts
               - java.lang.String: 
-                - ↑value: 1.7.7
+                - ↑value: 1.11.0
 ↓tag [ngx.components.UIElement-1698398009265]: 
   tagName: apx-chart
   ↓attr1 [ngx.components.UIAttribute-1698398046452]: 

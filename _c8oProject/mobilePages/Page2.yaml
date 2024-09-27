@@ -1,0 +1,33 @@
+segment: path-to-page2
+title: Title for Page2
+↓Content [ngx.components.UIDynamicElement-1706113739821]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓some_text [ngx.components.UIText-1706113751255]: 
+  ↓Paragraph [ngx.components.UIDynamicElement-1706113785896]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓some_text [ngx.components.UIText-1706113785895]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Some text
+    ↓Style [ngx.components.UIStyle-1706113795031]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              	color:red;
+              
+    ↓styleEditor [ngx.components.UIStyle-1706113940562]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              color:red;
+              font-family:Arial, Helvetica, sans-serif;
+              font-weight:900;
+              font-size:91px;
+              
