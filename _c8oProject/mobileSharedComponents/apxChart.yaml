@@ -3,7 +3,7 @@ scriptContent:
     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
     - com.twinsoft.convertigo.beans.common.FormatedContent: 
       →: |
-        /*Begin_c8o_CompImport*/
+        '/*Begin_c8o_CompImport*/
         /*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
         	/*End_c8o_CompDeclaration*/
@@ -27,8 +27,19 @@ scriptContent:
         /*Begin_c8o_CompAfterViewChecked*/
         		/*End_c8o_CompAfterViewChecked*/
         /*Begin_c8o_CompFunction*/
+        	public mergeOptions(options){
+        		let defaultOptions = {
+        			events: {
+        		        mounted: (chart) => {
+        					console.log("mounted !!!!!!!!!!!!!!!!!!!!!");
+        		          chart.windowResizeHandler();
+        		        }
+        		    }
+        		};
+        		return Object.assign(defaultOptions, options);
+        	}
         	/*End_c8o_CompFunction*/
-        
+        '
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1698397475706]: 
   ↓InstallDependencies [ngx.components.UICustomAsyncAction-1698397483147]: 
     build_scripts: 
@@ -85,7 +96,7 @@ scriptContent:
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-        - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+        - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.chart","prefix":"this.mergeOptions(","suffix":")","custom":"","useCustom":false}}
   ↓attr3 [ngx.components.UIAttribute-1698398883391]: 
     attrName: '[annotations]'
     attrValue: 
