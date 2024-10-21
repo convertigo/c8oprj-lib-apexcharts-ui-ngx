@@ -3,7 +3,7 @@ scriptContent:
     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
     - com.twinsoft.convertigo.beans.common.FormatedContent: 
       →: |
-        '/*Begin_c8o_CompImport*/
+        /*Begin_c8o_CompImport*/
         /*End_c8o_CompImport*/
         /*Begin_c8o_CompDeclaration*/
         	/*End_c8o_CompDeclaration*/
@@ -27,21 +27,23 @@ scriptContent:
         /*Begin_c8o_CompAfterViewChecked*/
         		/*End_c8o_CompAfterViewChecked*/
         /*Begin_c8o_CompFunction*/
-        	public mergeOptions(options){
-        		let defaultOptions = {
-        			events: {
-        		        mounted: (chart) => {
-        					console.log("mounted !!!!!!!!!!!!!!!!!!!!!");
-        		          chart.windowResizeHandler();
-        		        }
-        		    }
-        		};
-        		return Object.assign(defaultOptions, options);
-        	}
         	/*End_c8o_CompFunction*/
-        '
+        
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1698397475706]: 
   ↓InstallDependencies [ngx.components.UICustomAsyncAction-1698397483147]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            		try {
+            			
+            		} catch (e) {
+            		
+            		} finally {
+            			return;
+            		}
+            
     build_scripts: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -89,14 +91,65 @@ scriptContent:
                 - ↑value: ng-apexcharts
               - java.lang.String: 
                 - ↑value: 1.12.0
+↓chart [ngx.components.UICompVariable-1698398091344]: 
+  value: null
+↓annotations [ngx.components.UICompVariable-1698398634198]: 
+  comment: |
+    Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
+  value: null
+↓colors [ngx.components.UICompVariable-1698398636759]: 
+  value: null
+↓dataLabels [ngx.components.UICompVariable-1698398637860]: 
+  comment: |
+    Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
+  value: null
+↓series [ngx.components.UICompVariable-1698398088116]: 
+  comment: |
+    The series is a set of data. You may have single or multiple data series.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
+  value: null
+↓stroke [ngx.components.UICompVariable-1698398639617]: 
+  value: null
+↓labels [ngx.components.UICompVariable-1698398640733]: 
+  value: null
+↓legend [ngx.components.UICompVariable-1698398641528]: 
+  value: null
+↓fill [ngx.components.UICompVariable-1698398642584]: 
+  value: null
+↓tooltip [ngx.components.UICompVariable-1698398643469]: 
+  value: null
+↓plotOptions [ngx.components.UICompVariable-1698398644237]: 
+  value: null
+↓responsive [ngx.components.UICompVariable-1698398645175]: 
+  comment: |
+    You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
+    For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
+  value: null
+↓xaxis [ngx.components.UICompVariable-1698398646047]: 
+  value: null
+↓yaxis [ngx.components.UICompVariable-1698398744431]: 
+  value: null
+↓grid [ngx.components.UICompVariable-1698398746541]: 
+  value: null
+↓states [ngx.components.UICompVariable-1698398747781]: 
+  value: null
+↓title [ngx.components.UICompVariable-1698398093327]: 
+  value: null
+↓subtitle [ngx.components.UICompVariable-1698398750190]: 
+  value: null
+↓theme [ngx.components.UICompVariable-1698398751672]: 
+  value: null
 ↓tag [ngx.components.UIElement-1698398009265]: 
+  identifier: apxChart
   tagName: apx-chart
   ↓attr1 [ngx.components.UIAttribute-1698398046452]: 
     attrName: '[chart]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-        - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.chart","prefix":"this.mergeOptions(","suffix":")","custom":"","useCustom":false}}
+        - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
   ↓attr3 [ngx.components.UIAttribute-1698398883391]: 
     attrName: '[annotations]'
     attrValue: 
@@ -205,53 +258,23 @@ scriptContent:
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.theme","prefix":"","suffix":"","custom":"","useCustom":false}}
-↓chart [ngx.components.UICompVariable-1698398091344]: 
-  value: null
-↓annotations [ngx.components.UICompVariable-1698398634198]: 
-  comment: |
-    Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
-  value: null
-↓colors [ngx.components.UICompVariable-1698398636759]: 
-  value: null
-↓dataLabels [ngx.components.UICompVariable-1698398637860]: 
-  comment: |
-    Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
-  value: null
-↓series [ngx.components.UICompVariable-1698398088116]: 
-  comment: |
-    The series is a set of data. You may have single or multiple data series.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
-  value: null
-↓stroke [ngx.components.UICompVariable-1698398639617]: 
-  value: null
-↓labels [ngx.components.UICompVariable-1698398640733]: 
-  value: null
-↓legend [ngx.components.UICompVariable-1698398641528]: 
-  value: null
-↓fill [ngx.components.UICompVariable-1698398642584]: 
-  value: null
-↓tooltip [ngx.components.UICompVariable-1698398643469]: 
-  value: null
-↓plotOptions [ngx.components.UICompVariable-1698398644237]: 
-  value: null
-↓responsive [ngx.components.UICompVariable-1698398645175]: 
-  comment: |
-    You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
-  value: null
-↓xaxis [ngx.components.UICompVariable-1698398646047]: 
-  value: null
-↓yaxis [ngx.components.UICompVariable-1698398744431]: 
-  value: null
-↓grid [ngx.components.UICompVariable-1698398746541]: 
-  value: null
-↓states [ngx.components.UICompVariable-1698398747781]: 
-  value: null
-↓title [ngx.components.UICompVariable-1698398093327]: 
-  value: null
-↓subtitle [ngx.components.UICompVariable-1698398750190]: 
-  value: null
-↓theme [ngx.components.UICompVariable-1698398751672]: 
-  value: null
+  ↓Event [ngx.components.UIControlEvent-1729520891553]: 
+    attrName: (chartReady)
+    eventName: (chartReady)
+    ↓CustomAsyncAction [ngx.components.UICustomAsyncAction-1729520912502]: 
+      actionValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              		try {
+              			if(event?.chartObj?.el?.children?.[0]?.children?.[0]?.getAttribute("width") == "NaN"){
+              				console.log("[Component apxChart] NaN detected, we will force to re render");
+              				event.chartObj.windowResizeHandler();
+              			}
+              		} catch (e) {
+              		
+              		} finally {
+              			return;
+              		}
+              
