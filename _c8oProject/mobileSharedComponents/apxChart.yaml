@@ -92,7 +92,7 @@ scriptContent:
               - java.lang.String: 
                 - ↑value: 1.12.0
 ↓chart [ngx.components.UICompVariable-1698398091344]: 
-  value: null
+  value: '{type: ''area'',  height: 350, zoom: { enabled: true }}'
 ↓annotations [ngx.components.UICompVariable-1698398634198]: 
   comment: |
     Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
@@ -109,7 +109,7 @@ scriptContent:
   comment: |
     The series is a set of data. You may have single or multiple data series.
     For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
-  value: null
+  value: '[{  name: ''series1'',  data: [31, 40, 28, 51, 42, 109, 100]}, {  name: ''series2'',  data: [11, 32, 45, 32, 34, 52, 41]}]'
 ↓stroke [ngx.components.UICompVariable-1698398639617]: 
   value: null
 ↓labels [ngx.components.UICompVariable-1698398640733]: 
