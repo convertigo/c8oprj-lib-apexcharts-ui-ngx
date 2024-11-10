@@ -12,6 +12,7 @@ For more technical informations : [documentation](./project.md)
 - [Mobile Application](#mobile-application)
     - [Pages](#pages)
         - [Page](#page)
+        - [Page2](#page2)
     - [Shared Components](#shared-components)
         - [apxChart](#apxchart)
 
@@ -29,13 +30,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=main
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=8.3.0
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/main.zip
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/8.3.0.zip
      ```
      </td></tr>
     </table>
@@ -51,6 +52,8 @@ Describes the mobile application global properties
 #### Page
 
 A simple example to show apex chart usage
+
+#### Page2
 
 ### Shared Components
 
