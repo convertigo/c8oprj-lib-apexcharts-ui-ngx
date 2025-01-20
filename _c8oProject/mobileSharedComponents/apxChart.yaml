@@ -73,6 +73,8 @@ scriptContent:
                 - ↑value: NgApexchartsModule
               - java.lang.String: 
                 - ↑value: ng-apexcharts
+              - java.lang.String: 
+                - ↑value: false
     package_dependencies: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -83,14 +85,14 @@ scriptContent:
               - java.lang.String: 
                 - ↑value: apexcharts
               - java.lang.String: 
-                - ↑value: 3.54.1
+                - ↑value: 4.3.0
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
             - com.twinsoft.convertigo.beans.common.XMLVector: 
               - java.lang.String: 
                 - ↑value: ng-apexcharts
               - java.lang.String: 
-                - ↑value: 1.12.0
+                - ↑value: 1.15.0
 ↓chart [ngx.components.UICompVariable-1698398091344]: 
   value: null
 ↓annotations [ngx.components.UICompVariable-1698398634198]: 
@@ -278,3 +280,6 @@ scriptContent:
               			return;
               		}
               
+  ↓Icon [ngx.components.UIDynamicElement-1736851756355]: 
+    beanData: '{"ionBean":"Icon"}'
+    tagName: ion-icon
