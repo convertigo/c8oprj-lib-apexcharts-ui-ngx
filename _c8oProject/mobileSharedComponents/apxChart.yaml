@@ -70,7 +70,7 @@ scriptContent:
             - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
             - com.twinsoft.convertigo.beans.common.XMLVector: 
               - java.lang.String: 
-                - ↑value: NgApexchartsModule
+                - ↑value: '{ NgApexchartsModule }'
               - java.lang.String: 
                 - ↑value: ng-apexcharts
     package_dependencies: 
