@@ -30,13 +30,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=8.3.0
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx.git:branch=8.4.0.0_legacy
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/8.3.0.zip
+     libApexCharts=https://github.com/convertigo/c8oprj-lib-apexcharts-ui-ngx/archive/8.4.0.0_legacy.zip
      ```
      </td></tr>
     </table>
