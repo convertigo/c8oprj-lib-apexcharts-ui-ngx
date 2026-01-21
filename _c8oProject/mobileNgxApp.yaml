@@ -66,7 +66,6 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
 ↓Menu [ngx.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
 ↓apxChart [ngx.components.UISharedRegularComponent-1698397436502]: 🗏 mobileSharedComponents/apxChart.yaml
 ↓Page [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
-↓Page2 [ngx.components.PageComponent-1706113724326]: 🗏 mobilePages/Page2.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here
   styleContent: 
