@@ -57,8 +57,12 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;annotations
 </td>
 <td>
-Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
-For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
+Defines annotation markers and labels displayed on chart points or axes.
+Example value:
+<pre><code class="language-json">{"yaxis":[{"y":42,"borderColor":"#ff4560","label":{"text":"Target"}}]}
+```
+
+</pre>
 </td>
 </tr>
 <tr>
@@ -66,7 +70,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;chart
 </td>
 <td>
+Defines the "chart" input of the shared ApexCharts component.
+Example value:
+<pre><code class="language-json">{"type":"bar","height":320,"toolbar":{"show":false}}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -74,7 +83,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;colors
 </td>
 <td>
+Defines the "colors" input of the shared ApexCharts component.
+Example value:
+<pre><code class="language-json">["#2563eb","#0ea5e9","#22c55e"]
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -82,8 +96,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;dataLabels
 </td>
 <td>
-Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
-For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
+Defines data label visibility and style options.
+Example value:
+<pre><code class="language-json">{"enabled":true,"style":{"fontSize":"12px","fontWeight":"bold"}}
+```
+
+</pre>
 </td>
 </tr>
 <tr>
@@ -91,7 +109,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;fill
 </td>
 <td>
+Defines fill style such as solid or gradient.
+Example value:
+<pre><code class="language-json">{"type":"gradient","gradient":{"shadeIntensity":0.4,"opacityFrom":0.8,"opacityTo":0.2}}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -99,7 +122,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;grid
 </td>
 <td>
+Defines chart grid visibility and style.
+Example value:
+<pre><code class="language-json">{"show":true,"strokeDashArray":4}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -107,7 +135,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;labels
 </td>
 <td>
+Defines category labels for charts such as pie or donut.
+Example value:
+<pre><code class="language-json">["Direct","Organic","Ads","Referral"]
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -115,7 +148,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;legend
 </td>
 <td>
+Defines legend behavior and placement.
+Example value:
+<pre><code class="language-json">{"show":true,"position":"bottom"}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -123,7 +161,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;plotOptions
 </td>
 <td>
+Defines type-specific rendering options.
+Example value:
+<pre><code class="language-json">{"bar":{"horizontal":false,"columnWidth":"50%"}}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -131,8 +174,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;responsive
 </td>
 <td>
-You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
-For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
+Defines chart options overridden for specific breakpoints.
+Example value:
+<pre><code class="language-json">[{"breakpoint":768,"options":{"legend":{"position":"bottom"}}}]
+```
+
+</pre>
 </td>
 </tr>
 <tr>
@@ -140,8 +187,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;series
 </td>
 <td>
-The series is a set of data. You may have single or multiple data series.
-For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
+Defines the data series rendered by the chart.
+Example value:
+<pre><code class="language-json">[{"name":"Revenue","data":[12,18,15,22,28,24]}]
+```
+
+</pre>
 </td>
 </tr>
 <tr>
@@ -149,7 +200,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;states
 </td>
 <td>
+Defines hover and active visual states.
+Example value:
+<pre><code class="language-json">{"hover":{"filter":{"type":"lighten","value":0.1}}}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -157,7 +213,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;stroke
 </td>
 <td>
+Defines line or area stroke style.
+Example value:
+<pre><code class="language-json">{"curve":"smooth","width":2}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -165,7 +226,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;subtitle
 </td>
 <td>
+Defines an optional subtitle displayed under the title.
+Example value:
+<pre><code class="language-json">{"text":"FY 2026 - first half","align":"left"}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -173,7 +239,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;theme
 </td>
 <td>
+Defines chart theme and color palette mode.
+Example value:
+<pre><code class="language-json">{"mode":"dark","palette":"palette4"}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -181,7 +252,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;title
 </td>
 <td>
+Defines the main chart title.
+Example value:
+<pre><code class="language-json">{"text":"Monthly revenue","align":"left"}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -189,7 +265,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;tooltip
 </td>
 <td>
+Defines tooltip display options.
+Example value:
+<pre><code class="language-json">{"enabled":true,"shared":true}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -197,7 +278,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;xaxis
 </td>
 <td>
+Defines x-axis categories and labels.
+Example value:
+<pre><code class="language-json">{"categories":["Jan","Feb","Mar","Apr","May","Jun"]}
+```
 
+</pre>
 </td>
 </tr>
 <tr>
@@ -205,7 +291,12 @@ For more information please visit [Series documentation](https://apexcharts.com/
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;yaxis
 </td>
 <td>
+Defines y-axis scale and label formatting.
+Example value:
+<pre><code class="language-json">{"min":0,"max":100,"tickAmount":5}
+```
 
+</pre>
 </td>
 </tr>
 </table>

@@ -30,6 +30,7 @@ scriptContent:
         	/*End_c8o_CompFunction*/
         
 ↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1698397475706]: 
+  comment: Handles lifecycle events of the shared ApexCharts component
   ↓InstallDependencies [ngx.components.UICustomAsyncAction-1698397483147]: 
     actionValue: 
       - xmlizable: 
@@ -53,6 +54,7 @@ scriptContent:
             - com.twinsoft.convertigo.beans.common.XMLVector: 
               - java.lang.String: 
                 - ↑value: node_modules/apexcharts/dist/apexcharts.min.js
+    comment: Declares required dependencies and Angular imports for this shared component
     local_module_ng_imports: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -92,56 +94,121 @@ scriptContent:
               - java.lang.String: 
                 - ↑value: 1.12.0
 ↓chart [ngx.components.UICompVariable-1698398091344]: 
+  comment: |
+    Defines the "chart" input of the shared ApexCharts component.
+    Example value:
+    <pre><code class="language-json">{"type":"bar","height":320,"toolbar":{"show":false}}</code></pre>
   value: '{type: ''area'',  height: 350, zoom: { enabled: true }}'
 ↓annotations [ngx.components.UICompVariable-1698398634198]: 
   comment: |
-    Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) 
+    Defines annotation markers and labels displayed on chart points or axes.
+    Example value:
+    <pre><code class="language-json">{"yaxis":[{"y":42,"borderColor":"#ff4560","label":{"text":"Target"}}]}</code></pre>
   value: null
 ↓colors [ngx.components.UICompVariable-1698398636759]: 
+  comment: |
+    Defines the "colors" input of the shared ApexCharts component.
+    Example value:
+    <pre><code class="language-json">["#2563eb","#0ea5e9","#22c55e"]</code></pre>
   value: null
 ↓dataLabels [ngx.components.UICompVariable-1698398637860]: 
   comment: |
-    Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) 
+    Defines data label visibility and style options.
+    Example value:
+    <pre><code class="language-json">{"enabled":true,"style":{"fontSize":"12px","fontWeight":"bold"}}</code></pre>
   value: null
 ↓series [ngx.components.UICompVariable-1698398088116]: 
   comment: |
-    The series is a set of data. You may have single or multiple data series.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/series/) 
+    Defines the data series rendered by the chart.
+    Example value:
+    <pre><code class="language-json">[{"name":"Revenue","data":[12,18,15,22,28,24]}]</code></pre>
   value: '[{  name: ''series1'',  data: [31, 40, 28, 51, 42, 109, 100]}, {  name: ''series2'',  data: [11, 32, 45, 32, 34, 52, 41]}]'
 ↓stroke [ngx.components.UICompVariable-1698398639617]: 
+  comment: |
+    Defines line or area stroke style.
+    Example value:
+    <pre><code class="language-json">{"curve":"smooth","width":2}</code></pre>
   value: null
 ↓labels [ngx.components.UICompVariable-1698398640733]: 
+  comment: |
+    Defines category labels for charts such as pie or donut.
+    Example value:
+    <pre><code class="language-json">["Direct","Organic","Ads","Referral"]</code></pre>
   value: null
 ↓legend [ngx.components.UICompVariable-1698398641528]: 
+  comment: |
+    Defines legend behavior and placement.
+    Example value:
+    <pre><code class="language-json">{"show":true,"position":"bottom"}</code></pre>
   value: null
 ↓fill [ngx.components.UICompVariable-1698398642584]: 
+  comment: |
+    Defines fill style such as solid or gradient.
+    Example value:
+    <pre><code class="language-json">{"type":"gradient","gradient":{"shadeIntensity":0.4,"opacityFrom":0.8,"opacityTo":0.2}}</code></pre>
   value: null
 ↓tooltip [ngx.components.UICompVariable-1698398643469]: 
+  comment: |
+    Defines tooltip display options.
+    Example value:
+    <pre><code class="language-json">{"enabled":true,"shared":true}</code></pre>
   value: null
 ↓plotOptions [ngx.components.UICompVariable-1698398644237]: 
+  comment: |
+    Defines type-specific rendering options.
+    Example value:
+    <pre><code class="language-json">{"bar":{"horizontal":false,"columnWidth":"50%"}}</code></pre>
   value: null
 ↓responsive [ngx.components.UICompVariable-1698398645175]: 
   comment: |
-    You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
-    For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) 
+    Defines chart options overridden for specific breakpoints.
+    Example value:
+    <pre><code class="language-json">[{"breakpoint":768,"options":{"legend":{"position":"bottom"}}}]</code></pre>
   value: null
 ↓xaxis [ngx.components.UICompVariable-1698398646047]: 
+  comment: |
+    Defines x-axis categories and labels.
+    Example value:
+    <pre><code class="language-json">{"categories":["Jan","Feb","Mar","Apr","May","Jun"]}</code></pre>
   value: null
 ↓yaxis [ngx.components.UICompVariable-1698398744431]: 
+  comment: |
+    Defines y-axis scale and label formatting.
+    Example value:
+    <pre><code class="language-json">{"min":0,"max":100,"tickAmount":5}</code></pre>
   value: null
 ↓grid [ngx.components.UICompVariable-1698398746541]: 
+  comment: |
+    Defines chart grid visibility and style.
+    Example value:
+    <pre><code class="language-json">{"show":true,"strokeDashArray":4}</code></pre>
   value: null
 ↓states [ngx.components.UICompVariable-1698398747781]: 
+  comment: |
+    Defines hover and active visual states.
+    Example value:
+    <pre><code class="language-json">{"hover":{"filter":{"type":"lighten","value":0.1}}}</code></pre>
   value: null
 ↓title [ngx.components.UICompVariable-1698398093327]: 
+  comment: |
+    Defines the main chart title.
+    Example value:
+    <pre><code class="language-json">{"text":"Monthly revenue","align":"left"}</code></pre>
   value: null
 ↓subtitle [ngx.components.UICompVariable-1698398750190]: 
+  comment: |
+    Defines an optional subtitle displayed under the title.
+    Example value:
+    <pre><code class="language-json">{"text":"FY 2026 - first half","align":"left"}</code></pre>
   value: null
 ↓theme [ngx.components.UICompVariable-1698398751672]: 
+  comment: |
+    Defines chart theme and color palette mode.
+    Example value:
+    <pre><code class="language-json">{"mode":"dark","palette":"palette4"}</code></pre>
   value: null
 ↓tag [ngx.components.UIElement-1698398009265]: 
+  comment: Hosts the ApexCharts Angular element used by this shared component
   identifier: apxChart
   tagName: apx-chart
   ↓attr1 [ngx.components.UIAttribute-1698398046452]: 
@@ -150,116 +217,136 @@ scriptContent:
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.chart","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr3 [ngx.components.UIAttribute-1698398883391]: 
     attrName: '[annotations]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.annotations","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr4 [ngx.components.UIAttribute-1698398885609]: 
     attrName: '[colors]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.colors","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr5 [ngx.components.UIAttribute-1698398887083]: 
     attrName: '[dataLabels]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.dataLabels","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr [ngx.components.UIAttribute-1698398044417]: 
     attrName: '[series]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.series","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr6 [ngx.components.UIAttribute-1698398888239]: 
     attrName: '[stroke]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.stroke","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr7 [ngx.components.UIAttribute-1698398889076]: 
     attrName: '[labels]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.labels","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr8 [ngx.components.UIAttribute-1698398889916]: 
     attrName: '[legend]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.legend","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr9 [ngx.components.UIAttribute-1698398890570]: 
     attrName: '[fill]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.fill","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr10 [ngx.components.UIAttribute-1698398891596]: 
     attrName: '[tooltip]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.tooltip","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr11 [ngx.components.UIAttribute-1698398892378]: 
     attrName: '[plotOptions]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.plotOptions","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr12 [ngx.components.UIAttribute-1698398893278]: 
     attrName: '[responsive]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.responsive","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr13 [ngx.components.UIAttribute-1698398894118]: 
     attrName: '[xaxis]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.xaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr14 [ngx.components.UIAttribute-1698398894997]: 
     attrName: '[yaxis]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.yaxis","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr15 [ngx.components.UIAttribute-1698398895769]: 
     attrName: '[grid]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.grid","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr16 [ngx.components.UIAttribute-1698398896473]: 
     attrName: '[states]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.states","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr2 [ngx.components.UIAttribute-1698398049470]: 
     attrName: '[title]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.title","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr17 [ngx.components.UIAttribute-1698398897159]: 
     attrName: '[subtitle]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.subtitle","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓attr18 [ngx.components.UIAttribute-1698398897882]: 
     attrName: '[theme]'
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: source:{"filter":"Shared","project":"libApexCharts","input":"","model":{"data":[{"priority":1698397436502,"regular":true}],"path":"?.theme","prefix":"","suffix":"","custom":"","useCustom":false}}
+    comment: Binds one ApexCharts option to the underlying component input
   ↓Event [ngx.components.UIControlEvent-1729520891553]: 
     attrName: (chartReady)
+    comment: Handles the chartReady event emitted by ApexCharts
     eventName: (chartReady)
     ↓CustomAsyncAction [ngx.components.UICustomAsyncAction-1729520912502]: 
       actionValue: 
@@ -278,3 +365,4 @@ scriptContent:
               			return;
               		}
               
+      comment: Executes custom async logic when the chart ready event is triggered

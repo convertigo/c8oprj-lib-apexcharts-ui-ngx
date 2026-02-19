@@ -63,65 +63,156 @@ A simple example to show apex chart usage
 <th>name</th><th>comment</th>
 </tr>
 <tr>
-<td>annotations</td><td>Annotations in ApexCharts allows you to write custom text on specific data-points or on axes values.
-For more information please visit [Series documentation](https://apexcharts.com/docs/annotations/) </td>
+<td>annotations</td><td>Defines annotation markers and labels displayed on chart points or axes.
+Example value:
+<pre><code class="language-json">{"yaxis":[{"y":42,"borderColor":"#ff4560","label":{"text":"Target"}}]}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>chart</td><td></td>
+<td>chart</td><td>Defines the "chart" input of the shared ApexCharts component.
+Example value:
+<pre><code class="language-json">{"type":"bar","height":320,"toolbar":{"show":false}}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>colors</td><td></td>
+<td>colors</td><td>Defines the "colors" input of the shared ApexCharts component.
+Example value:
+<pre><code class="language-json">["#2563eb","#0ea5e9","#22c55e"]
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>dataLabels</td><td>Data Labels are the actual values which are passed in the series. You can add formatters which will allow you to modify values before displaying.
-For more information please visit [Series documentation](https://apexcharts.com/docs/datalabels/) </td>
+<td>dataLabels</td><td>Defines data label visibility and style options.
+Example value:
+<pre><code class="language-json">{"enabled":true,"style":{"fontSize":"12px","fontWeight":"bold"}}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>fill</td><td></td>
+<td>fill</td><td>Defines fill style such as solid or gradient.
+Example value:
+<pre><code class="language-json">{"type":"gradient","gradient":{"shadeIntensity":0.4,"opacityFrom":0.8,"opacityTo":0.2}}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>grid</td><td></td>
+<td>grid</td><td>Defines chart grid visibility and style.
+Example value:
+<pre><code class="language-json">{"show":true,"strokeDashArray":4}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>labels</td><td></td>
+<td>labels</td><td>Defines category labels for charts such as pie or donut.
+Example value:
+<pre><code class="language-json">["Direct","Organic","Ads","Referral"]
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>legend</td><td></td>
+<td>legend</td><td>Defines legend behavior and placement.
+Example value:
+<pre><code class="language-json">{"show":true,"position":"bottom"}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>plotOptions</td><td></td>
+<td>plotOptions</td><td>Defines type-specific rendering options.
+Example value:
+<pre><code class="language-json">{"bar":{"horizontal":false,"columnWidth":"50%"}}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>responsive</td><td>You can configure different options for different screen sizes and ApexCharts will override the configuration based on breakpoints defined.
-For more information please visit [Series documentation](https://apexcharts.com/docs/responsive/) </td>
+<td>responsive</td><td>Defines chart options overridden for specific breakpoints.
+Example value:
+<pre><code class="language-json">[{"breakpoint":768,"options":{"legend":{"position":"bottom"}}}]
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>series</td><td>The series is a set of data. You may have single or multiple data series.
-For more information please visit [Series documentation](https://apexcharts.com/docs/series/) </td>
+<td>series</td><td>Defines the data series rendered by the chart.
+Example value:
+<pre><code class="language-json">[{"name":"Revenue","data":[12,18,15,22,28,24]}]
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>states</td><td></td>
+<td>states</td><td>Defines hover and active visual states.
+Example value:
+<pre><code class="language-json">{"hover":{"filter":{"type":"lighten","value":0.1}}}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>stroke</td><td></td>
+<td>stroke</td><td>Defines line or area stroke style.
+Example value:
+<pre><code class="language-json">{"curve":"smooth","width":2}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>subtitle</td><td></td>
+<td>subtitle</td><td>Defines an optional subtitle displayed under the title.
+Example value:
+<pre><code class="language-json">{"text":"FY 2026 - first half","align":"left"}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>theme</td><td></td>
+<td>theme</td><td>Defines chart theme and color palette mode.
+Example value:
+<pre><code class="language-json">{"mode":"dark","palette":"palette4"}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>title</td><td></td>
+<td>title</td><td>Defines the main chart title.
+Example value:
+<pre><code class="language-json">{"text":"Monthly revenue","align":"left"}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>tooltip</td><td></td>
+<td>tooltip</td><td>Defines tooltip display options.
+Example value:
+<pre><code class="language-json">{"enabled":true,"shared":true}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>xaxis</td><td></td>
+<td>xaxis</td><td>Defines x-axis categories and labels.
+Example value:
+<pre><code class="language-json">{"categories":["Jan","Feb","Mar","Apr","May","Jun"]}
+```
+
+</pre></td>
 </tr>
 <tr>
-<td>yaxis</td><td></td>
+<td>yaxis</td><td>Defines y-axis scale and label formatting.
+Example value:
+<pre><code class="language-json">{"min":0,"max":100,"tickAmount":5}
+```
+
+</pre></td>
 </tr>
 </table>
 

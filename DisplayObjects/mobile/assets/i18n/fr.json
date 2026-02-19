@@ -1,8 +1,20 @@
 {
-    "My_Menu": "Mon menu",
-    "First_page": "Première page",
-    "Page": "Page",
-    "Action_1": "Action 1",
-    "Action_2": "Action 2",
-    "version_c8o": ""
+  "Navigation": "Navigation",
+  "ApexCharts_Demo": "Démo ApexCharts",
+  "ApexCharts_Intro": "Cette page montre des configurations ApexCharts réutilisables avec des métriques d'exemple.",
+  "ApexCharts_Types": "Les exemples ci-dessous incluent des graphiques en barres, en lignes, en aires et en secteurs.",
+  "Language": "Langue",
+  "Theme_Switch_To_Dark": "Passer au thème sombre",
+  "Theme_Switch_To_Light": "Passer au thème clair",
+  "Lang_English": "Anglais",
+  "Lang_French": "Français",
+  "Lang_Italian": "Italien",
+  "Lang_Spanish": "Espagnol",
+  "Lang_Cancel": "Annuler",
+  "My_Menu": "Mon menu",
+  "First_page": "Première page",
+  "Page": "Page",
+  "Action_1": "Action 1",
+  "Action_2": "Action 2",
+  "version_c8o": ""
 }

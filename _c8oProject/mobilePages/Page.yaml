@@ -16,127 +16,404 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-xfirst
-title: First page
+title: ApexCharts_Demo
 ↓Header [ngx.components.UIDynamicElement-1491634212350]: 
   beanData: '{"ionBean":"Header"}'
-  comment: Page header
+  comment: Top page header container
   tagName: ion-header
   ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
     beanData: '{"ionBean":"ToolBar"}'
+    comment: Main toolbar displayed in the header
     tagName: ion-toolbar
     ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      comment: Left toolbar button group
       tagName: ion-buttons
       ↓BackButton [ngx.components.UIDynamicElement-1643993281257]: 
         beanData: '{"ionBean":"BackButton"}'
+        comment: Navigates to the previous page when available
         tagName: ion-back-button
       ↓MenuButton [ngx.components.UIDynamicElement-1588172846908]: 
         beanData: '{"ionBean":"MenuButton"}'
+        comment: Toggles the side navigation menu
         tagName: ion-menu-button
     ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
       beanData: '{"ionBean":"BarTitle"}'
+      comment: Title container displayed in the toolbar
       tagName: ion-title
       ↓Text [ngx.components.UIText-1491634275121]: 
+        comment: Translated page title key
+        i18n: true
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Page
+            - MobileSmartSourceType: plain:ApexCharts_Demo
     ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      comment: Right toolbar button group
       tagName: ion-buttons
-      ↓Button [ngx.components.UIDynamicElement-1588170817806]: 
-        beanData: '{"ionBean":"Button"}'
+      ↓ThemeSwitchButton [ngx.components.UIDynamicElement-1770984415378]: 
+        beanData: '{"ionBean":"Button","IonFill":"plain:clear"}'
+        comment: Toggles between light and dark themes
         tagName: ion-button
-        ↓Icon [ngx.components.UIDynamicElement-1588170831166]: 
-          beanData: |
-            '{
-             "ionBean": "Icon",
-             "IconName": "plain:ellipsis-vertical",
-             "IconMdName": "plain",
-             "IconIosName": "plain"
-            }'
+        ↓Class [ngx.components.UIAttribute-1770984415381]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:toolbar-theme-button
+          comment: CSS class used to style the theme button
+        ↓Aria [ngx.components.UIAttribute-1770984415384]: 
+          attrName: aria-label
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'script:(this.global && this.global.themeDark) ? this.translate.instant(''Theme_Switch_To_Light'') : this.translate.instant(''Theme_Switch_To_Dark'')'
+          comment: Accessibility label describing the next theme action
+        ↓Event [ngx.components.UIControlEvent-1770984415387]: 
+          comment: Click handler for theme switching
+          ↓SetTheme [ngx.components.UIDynamicAction-1770984415390]: 
+            beanData: '{"ionBean":"SetThemeAction","dark":"script:!(this.global && this.global.themeDark)"}'
+            comment: Applies the opposite theme mode
+        ↓ThemeIcon [ngx.components.UIDynamicElement-1770984415393]: 
+          beanData: '{"ionBean":"Icon","IconName":"script:this?.global?.themeDark ? ''sunny-outline'' : ''moon-outline''"}'
+          comment: Dynamic icon reflecting the active theme
           tagName: ion-icon
+          ↓IconName [ngx.components.UIAttribute-1770984415396]: 
+            attrName: '[name]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global && this.global.themeDark) ? ''sunny-outline'' : ''moon-outline'''
+            comment: Binds the icon name to the current theme state
+      ↓LanguageSelector [ngx.components.UIDynamicElement-1770984415399]: 
+        beanData: |
+          '{
+           "ionBean": "Select",
+           "ControlName": "plain:name1770915137820",
+           "Justify": "plain:start"
+          }'
+        comment: Language selector displayed in the toolbar
+        tagName: ion-select
+        ↓Class [ngx.components.UIAttribute-1770984415402]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:toolbar-lang-select
+          comment: CSS class used to style the language selector
+        ↓Aria [ngx.components.UIAttribute-1770984415405]: 
+          attrName: aria-label
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Language' | translate
+          comment: Accessibility label for language selection
+        ↓Interface [ngx.components.UIAttribute-1770984415408]: 
+          attrName: '[interface]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'popover'
+          comment: Uses popover mode for option rendering
+        ↓Value [ngx.components.UIAttribute-1770984415411]: 
+          attrName: '[value]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.currentLanguage() ?? 'en'
+          comment: Current selected language bound to global state
+        ↓SelectedText [ngx.components.UIAttribute-1771328000001]: 
+          attrName: '[selectedText]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:(this.global?.getLanguageLabelKey() ??  'Lang_English') | translate
+          comment: Localized label shown for the selected language
+        ↓ChangeEvent [ngx.components.UIControlEvent-1770984415414]: 
+          attrName: (ionChange)
+          comment: Triggered when the selected language changes
+          eventName: ionChange
+          ↓SetLanguage [ngx.components.UIDynamicAction-1770984415417]: 
+            beanData: |
+              '{
+               "ionBean": "SetLanguageAction",
+               "language": "script:event.detail.value",
+               "storageKey": "plain:c8o-lang",
+               "globalProperty": "plain:currentLanguage"
+              }'
+            comment: Persists and applies the selected language
+        ↓LangEN [ngx.components.UIDynamicElement-1770984415420]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:en"}'
+          comment: English language option
+          tagName: ion-select-option
+          ↓Text [ngx.components.UIText-1770984415423]: 
+            comment: Translation key for the English option label
+            i18n: true
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Lang_English
+        ↓LangFR [ngx.components.UIDynamicElement-1770984415426]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:fr"}'
+          comment: French language option
+          tagName: ion-select-option
+          ↓Text [ngx.components.UIText-1770984415429]: 
+            comment: Translation key for the French option label
+            i18n: true
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Lang_French
+        ↓LangIT [ngx.components.UIDynamicElement-1770984415432]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:it"}'
+          comment: Italian language option
+          tagName: ion-select-option
+          ↓Text [ngx.components.UIText-1770984415435]: 
+            comment: Translation key for the Italian option label
+            i18n: true
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Lang_Italian
+        ↓LangES [ngx.components.UIDynamicElement-1770984415438]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:es"}'
+          comment: Spanish language option
+          tagName: ion-select-option
+          ↓Text [ngx.components.UIText-1770984415441]: 
+            comment: Translation key for the Spanish option label
+            i18n: true
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Lang_Spanish
 ↓Content [ngx.components.UIDynamicElement-1489674805352]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓Div [ngx.components.UIDynamicElement-1698398261070]: 
+  ↓IntroParagraph [ngx.components.UIDynamicElement-1790020000001]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    comment: Explains the purpose of the chart demonstrations
+    tagName: p
+    ↓Text [ngx.components.UIText-1790020000002]: 
+      comment: Translation key for the chart explanation paragraph
+      i18n: true
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:ApexCharts_Intro
+  ↓IntroTypes [ngx.components.UIDynamicElement-1790020000003]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    comment: Lists the chart types displayed below
+    tagName: p
+    ↓Text [ngx.components.UIText-1790020000004]: 
+      comment: Translation key for the list of chart types
+      i18n: true
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:ApexCharts_Types
+  ↓ChartBarContainer [ngx.components.UIDynamicElement-1790020000010]: 
     beanData: '{"ionBean":"DivTag"}'
+    comment: Container for the bar chart sample
     tagName: div
-    ↓tag [ngx.components.UIUseShared-1698398140993]: 
+    ↓BarChart [ngx.components.UIUseShared-1790020000011]: 
+      comment: Renders the shared ApexCharts component for the bar chart example
       sharedcomponent: libApexCharts.Application.NgxApp.apxChart
-      ↓series [ngx.components.UIUseVariable-1698398148870]: 
+      ↓series [ngx.components.UIUseVariable-1790020000012]: 
+        comment: Binds the bar chart series dataset
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.series
-      ↓chart [ngx.components.UIUseVariable-1698398148872]: 
+            - MobileSmartSourceType: script:local?.chartOptions?.bar?.series
+      ↓chart [ngx.components.UIUseVariable-1790020000013]: 
+        comment: Binds bar chart display settings
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.chart
-      ↓title [ngx.components.UIUseVariable-1698398148874]: 
+            - MobileSmartSourceType: script:local?.chartOptions?.bar?.chart
+      ↓title [ngx.components.UIUseVariable-1790020000014]: 
+        comment: Binds the bar chart title object
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.title
-      ↓xaxis [ngx.components.UIUseVariable-1698399317893]: 
+            - MobileSmartSourceType: script:local?.chartOptions?.bar?.title
+      ↓xaxis [ngx.components.UIUseVariable-1790020000015]: 
+        comment: Binds x-axis categories for the bar chart
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.xaxis
-      ↓theme [ngx.components.UIUseVariable-1698399317903]: 
+            - MobileSmartSourceType: script:local?.chartOptions?.bar?.xaxis
+      ↓theme [ngx.components.UIUseVariable-1790020000016]: 
+        comment: Binds the visual theme applied to the bar chart
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.theme
-    ↓Style [ngx.components.UIStyle-1698398274666]: 
+            - MobileSmartSourceType: script:local?.chartOptions?.bar?.theme
+    ↓Style [ngx.components.UIStyle-1790020000017]: 
+      comment: Defines layout sizing for the bar chart container
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              '/*# mystyule*/
-              text-align:center;
-              width: 100%;
-              height: 300px;
+              'width: 100%;
+              height: 320px;
+              margin-bottom: 18px;
               '
-↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [ngx.components.UIDynamicElement-1491634317538]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [ngx.components.UIDynamicElement-1588170246138]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
-      tagName: ion-buttons
-      ↓Button1 [ngx.components.UIDynamicElement-1491634332730]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: ion-button
-        ↓Text [ngx.components.UIText-1491634340354]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [ngx.components.UIDynamicElement-1588170269871]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
-      tagName: ion-buttons
-      ↓Button2 [ngx.components.UIDynamicElement-1491634376874]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: ion-button
-        ↓Text [ngx.components.UIText-1491634383107]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
-↓PageEvent [ngx.components.UIPageEvent-1698398178927]: 
+  ↓ChartLineContainer [ngx.components.UIDynamicElement-1790020000020]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Container for the line chart sample
+    tagName: div
+    ↓LineChart [ngx.components.UIUseShared-1790020000021]: 
+      comment: Renders the shared ApexCharts component for the line chart example
+      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+      ↓series [ngx.components.UIUseVariable-1790020000022]: 
+        comment: Binds the line chart series dataset
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.line?.series
+      ↓chart [ngx.components.UIUseVariable-1790020000023]: 
+        comment: Binds line chart display settings
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.line?.chart
+      ↓title [ngx.components.UIUseVariable-1790020000024]: 
+        comment: Binds the line chart title object
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.line?.title
+      ↓xaxis [ngx.components.UIUseVariable-1790020000025]: 
+        comment: Binds x-axis categories for the line chart
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.line?.xaxis
+      ↓theme [ngx.components.UIUseVariable-1790020000026]: 
+        comment: Binds the visual theme applied to the line chart
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.line?.theme
+    ↓Style [ngx.components.UIStyle-1790020000027]: 
+      comment: Defines layout sizing for the line chart container
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'width: 100%;
+              height: 320px;
+              margin-bottom: 18px;
+              '
+  ↓ChartAreaContainer [ngx.components.UIDynamicElement-1790020000030]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Container for the area chart sample
+    tagName: div
+    ↓AreaChart [ngx.components.UIUseShared-1790020000031]: 
+      comment: Renders the shared ApexCharts component for the area chart example
+      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+      ↓series [ngx.components.UIUseVariable-1790020000032]: 
+        comment: Binds the area chart series dataset
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.area?.series
+      ↓chart [ngx.components.UIUseVariable-1790020000033]: 
+        comment: Binds area chart display settings
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.area?.chart
+      ↓title [ngx.components.UIUseVariable-1790020000034]: 
+        comment: Binds the area chart title object
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.area?.title
+      ↓xaxis [ngx.components.UIUseVariable-1790020000035]: 
+        comment: Binds x-axis categories for the area chart
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.area?.xaxis
+      ↓theme [ngx.components.UIUseVariable-1790020000036]: 
+        comment: Binds the visual theme applied to the area chart
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.area?.theme
+    ↓Style [ngx.components.UIStyle-1790020000037]: 
+      comment: Defines layout sizing for the area chart container
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'width: 100%;
+              height: 320px;
+              margin-bottom: 18px;
+              '
+  ↓ChartPieContainer [ngx.components.UIDynamicElement-1790020000040]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Container for the pie chart sample
+    tagName: div
+    ↓PieChart [ngx.components.UIUseShared-1790020000041]: 
+      comment: Renders the shared ApexCharts component for the pie chart example
+      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+      ↓series [ngx.components.UIUseVariable-1790020000042]: 
+        comment: Binds the pie chart series values
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.pie?.series
+      ↓chart [ngx.components.UIUseVariable-1790020000043]: 
+        comment: Binds pie chart display settings
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.pie?.chart
+      ↓title [ngx.components.UIUseVariable-1790020000044]: 
+        comment: Binds the pie chart title object
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.pie?.title
+      ↓labels [ngx.components.UIUseVariable-1790020000045]: 
+        comment: Binds category labels for the pie chart slices
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.pie?.labels
+      ↓theme [ngx.components.UIUseVariable-1790020000046]: 
+        comment: Binds the visual theme applied to the pie chart
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:local?.chartOptions?.pie?.theme
+    ↓Style [ngx.components.UIStyle-1790020000047]: 
+      comment: Defines layout sizing for the pie chart container
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'width: 100%;
+              height: 320px;
+              margin-bottom: 18px;
+              '
+↓PageEvent [ngx.components.UIPageEvent-1790020000050]: 
+  comment: Initializes local chart configuration before the view is rendered
   viewEvent: onWillLoad
-  ↓SetLocal [ngx.components.UIDynamicAction-1698398189745]: 
+  ↓SetLocal [ngx.components.UIDynamicAction-1790020000051]: 
     beanData: |
       '{
        "ionBean": "SetLocalAction",
        "Property": "plain:chartOptions",
-       "Value": "script:{\r\n  series: [\r\n    {\r\n      name: \"My-series\",\r\n      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]\r\n    }\r\n  ],\r\n    chart: {\r\n    height: 350,\r\n      type: \"bar\"\r\n  },\r\n  title: {\r\n    text: \"My First Convertigo Apex Chart\"\r\n  },\r\n  xaxis: {\r\n    categories: [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\"]\r\n  },\r\n  theme: {\r\n    mode: ''dark''\r\n  }\r\n}"
+       "Value": "script:{\r\n  bar: {\r\n    series: [{ name: \"Revenue\", data: [12,18,15,22,28,24] }],\r\n    chart: { height: 300, type: \"bar\" },\r\n    title: { text: \"Monthly revenue (bar)\" },\r\n    xaxis: { categories: [\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  line: {\r\n    series: [{ name: \"Signups\", data: [5,9,7,11,13,15] }, { name: \"Trials\", data: [3,5,4,7,8,9] }],\r\n    chart: { height: 300, type: \"line\" },\r\n    title: { text: \"Weekly growth (line)\" },\r\n    xaxis: { categories: [\"W1\",\"W2\",\"W3\",\"W4\",\"W5\",\"W6\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  area: {\r\n    series: [{ name: \"Load\", data: [32,40,28,51,42,49] }],\r\n    chart: { height: 300, type: \"area\" },\r\n    title: { text: \"Server load (area)\" },\r\n    xaxis: { categories: [\"00h\",\"04h\",\"08h\",\"12h\",\"16h\",\"20h\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  pie: {\r\n    series: [44,55,13,43],\r\n    chart: { height: 300, type: \"pie\" },\r\n    title: { text: \"Traffic source share (pie)\" },\r\n    labels: [\"Direct\",\"Organic\",\"Ads\",\"Referral\"],\r\n    theme: { mode: \"dark\" }\r\n  }\r\n}"
       }'
+    comment: Stores all chart option objects in page-local state
     tagName: SetLocal
