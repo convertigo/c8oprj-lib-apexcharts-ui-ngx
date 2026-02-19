@@ -534,25 +534,8 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           :root.force-dark ion-title.title-large {
             --color: #e2e8f0;
           }'
-↓Font [ngx.components.UIFont-1771506124213]: 
-  comment: Registers IBM Plex Sans as the default application font
-  fontSource: 
-    - xmlizable: 
-      - ↑classname: com.twinsoft.convertigo.beans.common.FontSource
-      - com.twinsoft.convertigo.beans.common.FontSource: 
-        →: '{"fontId":"ibm-plex-sans","fontFamily":"IBM Plex Sans","fontWeight":"400","fontStyle":"normal","fontSubset":"latin"}'
-  styleContent: 
-    - xmlizable: 
-      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-      - com.twinsoft.convertigo.beans.common.FormatedContent: 
-        →: |
-          'font-family: "IBM Plex Sans";
-          font-weight: 400;
-          font-style: "normal";
-          font-variant: "latin";
-          '
-↓TailwindTheme [ngx.components.UITheme-1771506124216]: 
-  comment: Utility-like design token layer mapped to Ionic components (v8.4.0.1)
+↓TailwindTheme [ngx.components.UITheme-1771512415878]: 
+  comment: Utility-like design token layer mapped to Ionic components (v8.4.0.4)
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -563,7 +546,7 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           
           /** Ionic CSS Variables **/
           
-          /** version 8.4.0.1 **/
+          /** version 8.4.0.4 **/
           
           /* tw-ionic.css
              Tailwind-ish theme overlay for Ionic (v6/v7+)
@@ -1954,11 +1937,21 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
             --icon-color: color-mix(in srgb, var(--tw-text-muted) 88%, var(--tw-text) 12%);
             --clear-button-color: color-mix(in srgb, var(--tw-text-muted) 88%, var(--tw-text) 12%);
             --border-radius: var(--tw-radius-md);
+            --padding-start: 0;
+            --padding-end: 0;
             --box-shadow: none;
-            padding-inline: 0.35rem;
+            padding-inline: 0;
+            padding-left: 0;
+            padding-right: 0;
             border: 0;
             border-radius: var(--tw-radius-md);
             box-shadow: none;
+          }
+          
+          ion-toolbar ion-searchbar {
+            padding-inline: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
           }
           
           ion-searchbar.searchbar-has-focus {
@@ -3037,4 +3030,21 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
             border-radius: 999px;
             overflow: hidden;
           }
+          '
+↓Font [ngx.components.UIFont-1771506124213]: 
+  comment: Registers IBM Plex Sans as the default application font
+  fontSource: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FontSource
+      - com.twinsoft.convertigo.beans.common.FontSource: 
+        →: '{"fontId":"ibm-plex-sans","fontFamily":"IBM Plex Sans","fontWeight":"400","fontStyle":"normal","fontSubset":"latin"}'
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'font-family: "IBM Plex Sans";
+          font-weight: 400;
+          font-style: "normal";
+          font-variant: "latin";
           '
