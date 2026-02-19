@@ -237,7 +237,7 @@ title: ApexCharts_Demo
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.bar?.title
+            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Bar'')}'
       ↓xaxis [ngx.components.UIUseVariable-1790020000015]: 
         comment: Binds x-axis categories for the bar chart
         varValue: 
@@ -285,7 +285,7 @@ title: ApexCharts_Demo
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.line?.title
+            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Line'')}'
       ↓xaxis [ngx.components.UIUseVariable-1790020000025]: 
         comment: Binds x-axis categories for the line chart
         varValue: 
@@ -333,7 +333,7 @@ title: ApexCharts_Demo
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.area?.title
+            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Area'')}'
       ↓xaxis [ngx.components.UIUseVariable-1790020000035]: 
         comment: Binds x-axis categories for the area chart
         varValue: 
@@ -381,7 +381,7 @@ title: ApexCharts_Demo
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.pie?.title
+            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Pie'')}'
       ↓labels [ngx.components.UIUseVariable-1790020000045]: 
         comment: Binds category labels for the pie chart slices
         varValue: 
