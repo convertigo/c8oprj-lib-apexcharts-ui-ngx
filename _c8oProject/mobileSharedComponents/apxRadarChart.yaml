@@ -1,0 +1,106 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_CompImport*/
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	/*End_c8o_CompFunction*/
+        
+↓series [ngx.components.UICompVariable-1799100011001]: 
+  comment: |
+    Defines the data series rendered by the chart.
+    Example value:
+    <pre><code class="language-json">[{"name":"Score","data":[80,50,30,40,100,20]}]</code></pre>
+  value: '[{"name":"Score","data":[80,50,30,40,100,20]}]'
+↓title [ngx.components.UICompVariable-1799100011002]: 
+  comment: |
+    Defines the title text displayed above the chart.
+    Example value:
+    <pre><code class="language-json">"Radar chart example"</code></pre>
+  value: '''Radar chart example'''
+↓categories [ngx.components.UICompVariable-1799100011003]: 
+  comment: |
+    Defines category labels used on axis-based charts.
+    Example value:
+    <pre><code class="language-json">["Design","Code","Tests","Docs","UX","Ops"]</code></pre>
+  value: '["Design","Code","Tests","Docs","UX","Ops"]'
+↓labels [ngx.components.UICompVariable-1799100011004]: 
+  comment: |
+    Defines labels used by pie-like chart types.
+    Example value:
+    <pre><code class="language-json">[]</code></pre>
+  value: '[]'
+↓height [ngx.components.UICompVariable-1799100011005]: 
+  comment: |
+    Defines the chart height in pixels.
+    Example value:
+    <pre><code class="language-json">320</code></pre>
+  value: 320
+↓themeMode [ngx.components.UICompVariable-1799100011006]: 
+  comment: |
+    Defines the chart theme mode.
+    Example value:
+    <pre><code class="language-json">"light"</code></pre>
+  value: '''light'''
+↓tag [ngx.components.UIUseShared-1799100011030]: 
+  comment: Wraps the generic apxChart shared component with a preconfigured radar type
+  identifier: apxRadarChart
+  sharedcomponent: libApexCharts.Application.NgxApp.apxChart
+  ↓series [ngx.components.UIUseVariable-1799100011031]: 
+    comment: Binds the preset "series" variable to the underlying apxChart "series" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:this.series
+  ↓chart [ngx.components.UIUseVariable-1799100011032]: 
+    comment: Binds chart type and height to the underlying apxChart "chart" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: 'script:{type: ''radar'', height: this.height || 320}'
+  ↓title [ngx.components.UIUseVariable-1799100011033]: 
+    comment: Binds the preset "title" variable to the underlying apxChart "title" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: 'script:this.title ? {text: this.title} : null'
+  ↓xaxis [ngx.components.UIUseVariable-1799100011034]: 
+    comment: Binds the preset "categories" variable to the underlying apxChart "xaxis" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: 'script:(this.categories && this.categories.length) ? {categories: this.categories} : null'
+  ↓labels [ngx.components.UIUseVariable-1799100011035]: 
+    comment: Binds the preset "labels" variable to the underlying apxChart "labels" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: 'script:(this.labels && this.labels.length) ? this.labels : null'
+  ↓theme [ngx.components.UIUseVariable-1799100011036]: 
+    comment: Binds the preset "themeMode" variable to the underlying apxChart "theme" input
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: 'script:{mode: this.themeMode || ''light''}'

@@ -213,207 +213,445 @@ title: ApexCharts_Demo
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:ApexCharts_Types
-  ↓ChartBarContainer [ngx.components.UIDynamicElement-1790020000010]: 
+  ↓ApxChartContainer [ngx.components.UIDynamicElement-1790040000010]: 
     beanData: '{"ionBean":"DivTag"}'
-    comment: Container for the bar chart sample
+    comment: Demo container for apxChart
     tagName: div
-    ↓BarChart [ngx.components.UIUseShared-1790020000011]: 
-      comment: Renders the shared ApexCharts component for the bar chart example
+    ↓ApxChartTitle [ngx.components.UIDynamicElement-1790040000011]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000012]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxChart
+    ↓ApxChart [ngx.components.UIUseShared-1790040000013]: 
+      comment: Displays one instance of apxChart
       sharedcomponent: libApexCharts.Application.NgxApp.apxChart
-      ↓series [ngx.components.UIUseVariable-1790020000012]: 
-        comment: Binds the bar chart series dataset
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.bar?.series
-      ↓chart [ngx.components.UIUseVariable-1790020000013]: 
-        comment: Binds bar chart display settings
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.bar?.chart
-      ↓title [ngx.components.UIUseVariable-1790020000014]: 
-        comment: Binds the bar chart title object
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Bar'')}'
-      ↓xaxis [ngx.components.UIUseVariable-1790020000015]: 
-        comment: Binds x-axis categories for the bar chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.bar?.xaxis
-      ↓theme [ngx.components.UIUseVariable-1790020000016]: 
-        comment: Binds the visual theme applied to the bar chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.bar?.theme
-    ↓Style [ngx.components.UIStyle-1790020000017]: 
-      comment: Defines layout sizing for the bar chart container
+    ↓Style [ngx.components.UIStyle-1790040000014]: 
+      comment: Adds spacing under this demo block
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              'width: 100%;
-              height: 320px;
-              margin-bottom: 18px;
+              'margin-bottom: 18px;
               '
-  ↓ChartLineContainer [ngx.components.UIDynamicElement-1790020000020]: 
+  ↓ApxBarChartContainer [ngx.components.UIDynamicElement-1790040000020]: 
     beanData: '{"ionBean":"DivTag"}'
-    comment: Container for the line chart sample
+    comment: Demo container for apxBarChart
     tagName: div
-    ↓LineChart [ngx.components.UIUseShared-1790020000021]: 
-      comment: Renders the shared ApexCharts component for the line chart example
-      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
-      ↓series [ngx.components.UIUseVariable-1790020000022]: 
-        comment: Binds the line chart series dataset
-        varValue: 
+    ↓ApxBarChartTitle [ngx.components.UIDynamicElement-1790040000021]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000022]: 
+        comment: Component name shown in the page
+        textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.line?.series
-      ↓chart [ngx.components.UIUseVariable-1790020000023]: 
-        comment: Binds line chart display settings
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.line?.chart
-      ↓title [ngx.components.UIUseVariable-1790020000024]: 
-        comment: Binds the line chart title object
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Line'')}'
-      ↓xaxis [ngx.components.UIUseVariable-1790020000025]: 
-        comment: Binds x-axis categories for the line chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.line?.xaxis
-      ↓theme [ngx.components.UIUseVariable-1790020000026]: 
-        comment: Binds the visual theme applied to the line chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.line?.theme
-    ↓Style [ngx.components.UIStyle-1790020000027]: 
-      comment: Defines layout sizing for the line chart container
+            - MobileSmartSourceType: plain:apxBarChart
+    ↓ApxBarChart [ngx.components.UIUseShared-1790040000023]: 
+      comment: Displays one instance of apxBarChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxBarChart
+    ↓Style [ngx.components.UIStyle-1790040000024]: 
+      comment: Adds spacing under this demo block
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              'width: 100%;
-              height: 320px;
-              margin-bottom: 18px;
+              'margin-bottom: 18px;
               '
-  ↓ChartAreaContainer [ngx.components.UIDynamicElement-1790020000030]: 
+  ↓ApxLineChartContainer [ngx.components.UIDynamicElement-1790040000030]: 
     beanData: '{"ionBean":"DivTag"}'
-    comment: Container for the area chart sample
+    comment: Demo container for apxLineChart
     tagName: div
-    ↓AreaChart [ngx.components.UIUseShared-1790020000031]: 
-      comment: Renders the shared ApexCharts component for the area chart example
-      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
-      ↓series [ngx.components.UIUseVariable-1790020000032]: 
-        comment: Binds the area chart series dataset
-        varValue: 
+    ↓ApxLineChartTitle [ngx.components.UIDynamicElement-1790040000031]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000032]: 
+        comment: Component name shown in the page
+        textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.area?.series
-      ↓chart [ngx.components.UIUseVariable-1790020000033]: 
-        comment: Binds area chart display settings
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.area?.chart
-      ↓title [ngx.components.UIUseVariable-1790020000034]: 
-        comment: Binds the area chart title object
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Area'')}'
-      ↓xaxis [ngx.components.UIUseVariable-1790020000035]: 
-        comment: Binds x-axis categories for the area chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.area?.xaxis
-      ↓theme [ngx.components.UIUseVariable-1790020000036]: 
-        comment: Binds the visual theme applied to the area chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.area?.theme
-    ↓Style [ngx.components.UIStyle-1790020000037]: 
-      comment: Defines layout sizing for the area chart container
+            - MobileSmartSourceType: plain:apxLineChart
+    ↓ApxLineChart [ngx.components.UIUseShared-1790040000033]: 
+      comment: Displays one instance of apxLineChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxLineChart
+    ↓Style [ngx.components.UIStyle-1790040000034]: 
+      comment: Adds spacing under this demo block
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              'width: 100%;
-              height: 320px;
-              margin-bottom: 18px;
+              'margin-bottom: 18px;
               '
-  ↓ChartPieContainer [ngx.components.UIDynamicElement-1790020000040]: 
+  ↓ApxAreaChartContainer [ngx.components.UIDynamicElement-1790040000040]: 
     beanData: '{"ionBean":"DivTag"}'
-    comment: Container for the pie chart sample
+    comment: Demo container for apxAreaChart
     tagName: div
-    ↓PieChart [ngx.components.UIUseShared-1790020000041]: 
-      comment: Renders the shared ApexCharts component for the pie chart example
-      sharedcomponent: libApexCharts.Application.NgxApp.apxChart
-      ↓series [ngx.components.UIUseVariable-1790020000042]: 
-        comment: Binds the pie chart series values
-        varValue: 
+    ↓ApxAreaChartTitle [ngx.components.UIDynamicElement-1790040000041]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000042]: 
+        comment: Component name shown in the page
+        textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.pie?.series
-      ↓chart [ngx.components.UIUseVariable-1790020000043]: 
-        comment: Binds pie chart display settings
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.pie?.chart
-      ↓title [ngx.components.UIUseVariable-1790020000044]: 
-        comment: Binds the pie chart title object
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{text: this.translate.instant(''Chart_Title_Pie'')}'
-      ↓labels [ngx.components.UIUseVariable-1790020000045]: 
-        comment: Binds category labels for the pie chart slices
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.pie?.labels
-      ↓theme [ngx.components.UIUseVariable-1790020000046]: 
-        comment: Binds the visual theme applied to the pie chart
-        varValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:local?.chartOptions?.pie?.theme
-    ↓Style [ngx.components.UIStyle-1790020000047]: 
-      comment: Defines layout sizing for the pie chart container
+            - MobileSmartSourceType: plain:apxAreaChart
+    ↓ApxAreaChart [ngx.components.UIUseShared-1790040000043]: 
+      comment: Displays one instance of apxAreaChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxAreaChart
+    ↓Style [ngx.components.UIStyle-1790040000044]: 
+      comment: Adds spacing under this demo block
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
           - com.twinsoft.convertigo.beans.common.FormatedContent: 
             →: |
-              'width: 100%;
-              height: 320px;
-              margin-bottom: 18px;
+              'margin-bottom: 18px;
               '
-↓PageEvent [ngx.components.UIPageEvent-1790020000050]: 
-  comment: Initializes local chart configuration before the view is rendered
-  viewEvent: onWillLoad
-  ↓SetLocal [ngx.components.UIDynamicAction-1790020000051]: 
-    beanData: |
-      '{
-       "ionBean": "SetLocalAction",
-       "Property": "plain:chartOptions",
-       "Value": "script:{\r\n  bar: {\r\n    series: [{ name: \"Revenue\", data: [12,18,15,22,28,24] }],\r\n    chart: { height: 300, type: \"bar\" },\r\n    title: { text: \"Monthly revenue (bar)\" },\r\n    xaxis: { categories: [\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  line: {\r\n    series: [{ name: \"Signups\", data: [5,9,7,11,13,15] }, { name: \"Trials\", data: [3,5,4,7,8,9] }],\r\n    chart: { height: 300, type: \"line\" },\r\n    title: { text: \"Weekly growth (line)\" },\r\n    xaxis: { categories: [\"W1\",\"W2\",\"W3\",\"W4\",\"W5\",\"W6\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  area: {\r\n    series: [{ name: \"Load\", data: [32,40,28,51,42,49] }],\r\n    chart: { height: 300, type: \"area\" },\r\n    title: { text: \"Server load (area)\" },\r\n    xaxis: { categories: [\"00h\",\"04h\",\"08h\",\"12h\",\"16h\",\"20h\"] },\r\n    theme: { mode: \"dark\" }\r\n  },\r\n  pie: {\r\n    series: [44,55,13,43],\r\n    chart: { height: 300, type: \"pie\" },\r\n    title: { text: \"Traffic source share (pie)\" },\r\n    labels: [\"Direct\",\"Organic\",\"Ads\",\"Referral\"],\r\n    theme: { mode: \"dark\" }\r\n  }\r\n}"
-      }'
-    comment: Stores all chart option objects in page-local state
-    tagName: SetLocal
+  ↓ApxPieChartContainer [ngx.components.UIDynamicElement-1790040000050]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxPieChart
+    tagName: div
+    ↓ApxPieChartTitle [ngx.components.UIDynamicElement-1790040000051]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000052]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxPieChart
+    ↓ApxPieChart [ngx.components.UIUseShared-1790040000053]: 
+      comment: Displays one instance of apxPieChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxPieChart
+    ↓Style [ngx.components.UIStyle-1790040000054]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxDonutChartContainer [ngx.components.UIDynamicElement-1790040000060]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxDonutChart
+    tagName: div
+    ↓ApxDonutChartTitle [ngx.components.UIDynamicElement-1790040000061]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000062]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxDonutChart
+    ↓ApxDonutChart [ngx.components.UIUseShared-1790040000063]: 
+      comment: Displays one instance of apxDonutChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxDonutChart
+    ↓Style [ngx.components.UIStyle-1790040000064]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxRadialBarChartContainer [ngx.components.UIDynamicElement-1790040000070]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxRadialBarChart
+    tagName: div
+    ↓ApxRadialBarChartTitle [ngx.components.UIDynamicElement-1790040000071]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000072]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxRadialBarChart
+    ↓ApxRadialBarChart [ngx.components.UIUseShared-1790040000073]: 
+      comment: Displays one instance of apxRadialBarChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxRadialBarChart
+    ↓Style [ngx.components.UIStyle-1790040000074]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxScatterChartContainer [ngx.components.UIDynamicElement-1790040000080]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxScatterChart
+    tagName: div
+    ↓ApxScatterChartTitle [ngx.components.UIDynamicElement-1790040000081]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000082]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxScatterChart
+    ↓ApxScatterChart [ngx.components.UIUseShared-1790040000083]: 
+      comment: Displays one instance of apxScatterChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxScatterChart
+    ↓Style [ngx.components.UIStyle-1790040000084]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxBubbleChartContainer [ngx.components.UIDynamicElement-1790040000090]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxBubbleChart
+    tagName: div
+    ↓ApxBubbleChartTitle [ngx.components.UIDynamicElement-1790040000091]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000092]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxBubbleChart
+    ↓ApxBubbleChart [ngx.components.UIUseShared-1790040000093]: 
+      comment: Displays one instance of apxBubbleChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxBubbleChart
+    ↓Style [ngx.components.UIStyle-1790040000094]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxHeatmapChartContainer [ngx.components.UIDynamicElement-1790040000100]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxHeatmapChart
+    tagName: div
+    ↓ApxHeatmapChartTitle [ngx.components.UIDynamicElement-1790040000101]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000102]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxHeatmapChart
+    ↓ApxHeatmapChart [ngx.components.UIUseShared-1790040000103]: 
+      comment: Displays one instance of apxHeatmapChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxHeatmapChart
+    ↓Style [ngx.components.UIStyle-1790040000104]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxCandlestickChartContainer [ngx.components.UIDynamicElement-1790040000110]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxCandlestickChart
+    tagName: div
+    ↓ApxCandlestickChartTitle [ngx.components.UIDynamicElement-1790040000111]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000112]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxCandlestickChart
+    ↓ApxCandlestickChart [ngx.components.UIUseShared-1790040000113]: 
+      comment: Displays one instance of apxCandlestickChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxCandlestickChart
+    ↓Style [ngx.components.UIStyle-1790040000114]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxBoxPlotChartContainer [ngx.components.UIDynamicElement-1790040000120]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxBoxPlotChart
+    tagName: div
+    ↓ApxBoxPlotChartTitle [ngx.components.UIDynamicElement-1790040000121]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000122]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxBoxPlotChart
+    ↓ApxBoxPlotChart [ngx.components.UIUseShared-1790040000123]: 
+      comment: Displays one instance of apxBoxPlotChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxBoxPlotChart
+    ↓Style [ngx.components.UIStyle-1790040000124]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxRadarChartContainer [ngx.components.UIDynamicElement-1790040000130]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxRadarChart
+    tagName: div
+    ↓ApxRadarChartTitle [ngx.components.UIDynamicElement-1790040000131]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000132]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxRadarChart
+    ↓ApxRadarChart [ngx.components.UIUseShared-1790040000133]: 
+      comment: Displays one instance of apxRadarChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxRadarChart
+    ↓Style [ngx.components.UIStyle-1790040000134]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxPolarAreaChartContainer [ngx.components.UIDynamicElement-1790040000140]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxPolarAreaChart
+    tagName: div
+    ↓ApxPolarAreaChartTitle [ngx.components.UIDynamicElement-1790040000141]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000142]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxPolarAreaChart
+    ↓ApxPolarAreaChart [ngx.components.UIUseShared-1790040000143]: 
+      comment: Displays one instance of apxPolarAreaChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxPolarAreaChart
+    ↓Style [ngx.components.UIStyle-1790040000144]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxRangeBarChartContainer [ngx.components.UIDynamicElement-1790040000150]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxRangeBarChart
+    tagName: div
+    ↓ApxRangeBarChartTitle [ngx.components.UIDynamicElement-1790040000151]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000152]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxRangeBarChart
+    ↓ApxRangeBarChart [ngx.components.UIUseShared-1790040000153]: 
+      comment: Displays one instance of apxRangeBarChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxRangeBarChart
+    ↓Style [ngx.components.UIStyle-1790040000154]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxRangeAreaChartContainer [ngx.components.UIDynamicElement-1790040000160]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxRangeAreaChart
+    tagName: div
+    ↓ApxRangeAreaChartTitle [ngx.components.UIDynamicElement-1790040000161]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000162]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxRangeAreaChart
+    ↓ApxRangeAreaChart [ngx.components.UIUseShared-1790040000163]: 
+      comment: Displays one instance of apxRangeAreaChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxRangeAreaChart
+    ↓Style [ngx.components.UIStyle-1790040000164]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '
+  ↓ApxTreemapChartContainer [ngx.components.UIDynamicElement-1790040000170]: 
+    beanData: '{"ionBean":"DivTag"}'
+    comment: Demo container for apxTreemapChart
+    tagName: div
+    ↓ApxTreemapChartTitle [ngx.components.UIDynamicElement-1790040000171]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      comment: Displays the component name above the sample
+      tagName: p
+      ↓Text [ngx.components.UIText-1790040000172]: 
+        comment: Component name shown in the page
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:apxTreemapChart
+    ↓ApxTreemapChart [ngx.components.UIUseShared-1790040000173]: 
+      comment: Displays one instance of apxTreemapChart
+      sharedcomponent: libApexCharts.Application.NgxApp.apxTreemapChart
+    ↓Style [ngx.components.UIStyle-1790040000174]: 
+      comment: Adds spacing under this demo block
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              'margin-bottom: 18px;
+              '

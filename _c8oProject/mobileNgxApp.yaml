@@ -59,6 +59,22 @@ componentScriptContent:
 tplProjectName: mobilebuilder_tpl_8_4_0_ngx
 ↓Menu [ngx.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
 ↓apxChart [ngx.components.UISharedRegularComponent-1698397436502]: 🗏 mobileSharedComponents/apxChart.yaml
+↓apxBarChart [ngx.components.UISharedRegularComponent-1797000000001]: 🗏 mobileSharedComponents/apxBarChart.yaml
+↓apxLineChart [ngx.components.UISharedRegularComponent-1797000000002]: 🗏 mobileSharedComponents/apxLineChart.yaml
+↓apxAreaChart [ngx.components.UISharedRegularComponent-1797000000003]: 🗏 mobileSharedComponents/apxAreaChart.yaml
+↓apxPieChart [ngx.components.UISharedRegularComponent-1797000000004]: 🗏 mobileSharedComponents/apxPieChart.yaml
+↓apxDonutChart [ngx.components.UISharedRegularComponent-1797000000005]: 🗏 mobileSharedComponents/apxDonutChart.yaml
+↓apxRadialBarChart [ngx.components.UISharedRegularComponent-1797000000006]: 🗏 mobileSharedComponents/apxRadialBarChart.yaml
+↓apxScatterChart [ngx.components.UISharedRegularComponent-1797000000007]: 🗏 mobileSharedComponents/apxScatterChart.yaml
+↓apxBubbleChart [ngx.components.UISharedRegularComponent-1797000000008]: 🗏 mobileSharedComponents/apxBubbleChart.yaml
+↓apxHeatmapChart [ngx.components.UISharedRegularComponent-1797000000009]: 🗏 mobileSharedComponents/apxHeatmapChart.yaml
+↓apxCandlestickChart [ngx.components.UISharedRegularComponent-1797000000010]: 🗏 mobileSharedComponents/apxCandlestickChart.yaml
+↓apxBoxPlotChart [ngx.components.UISharedRegularComponent-1797000000011]: 🗏 mobileSharedComponents/apxBoxPlotChart.yaml
+↓apxRadarChart [ngx.components.UISharedRegularComponent-1797000000012]: 🗏 mobileSharedComponents/apxRadarChart.yaml
+↓apxPolarAreaChart [ngx.components.UISharedRegularComponent-1797000000013]: 🗏 mobileSharedComponents/apxPolarAreaChart.yaml
+↓apxRangeBarChart [ngx.components.UISharedRegularComponent-1797000000014]: 🗏 mobileSharedComponents/apxRangeBarChart.yaml
+↓apxRangeAreaChart [ngx.components.UISharedRegularComponent-1797000000015]: 🗏 mobileSharedComponents/apxRangeAreaChart.yaml
+↓apxTreemapChart [ngx.components.UISharedRegularComponent-1797000000016]: 🗏 mobileSharedComponents/apxTreemapChart.yaml
 ↓Page [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓AppEvent [ngx.components.UIAppEvent-1770984391407]: 
   appEvent: onAppInit
